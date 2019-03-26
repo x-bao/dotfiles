@@ -6,6 +6,7 @@ alias vsc="'/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
 alias gti='git'
 alias rmm='trash'
 alias c='ici'
+alias txd='sftp -P2222 sanbaofeng@login.tianxiao100.com'
 
 alias ls="ls --color=auto"
 
