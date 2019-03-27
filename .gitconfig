@@ -1,0 +1,19 @@
+[push]
+	default = matching
+[user]
+	name = bao
+	email = baoyeyene@gmail.com
+[core]
+	editor = vim
+	pager = less
+[color]
+	ui = 1
+[help]
+	autocorrect = 1
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[stash]
+    showPatch = true
