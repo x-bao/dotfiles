@@ -1,0 +1,13 @@
+# Transiton Cheat Sheet
+
+# The property that the browser will animate, such as background, OR all
+transition-property
+
+# How long the transition will tack. Takes a value in seconds or milliseconds(s or ms).
+transition-duration
+
+# How long a browser waits before starting the transition. Takes a value in seconds or milliseconds.
+transtion-delay
+
+# How the transition's rate of change changes over time. Takes values such as linear, ease-in, ease-out, steps or cubic-bezier.
+transiton-timing-function

@@ -1,0 +1,19 @@
+# Keyframes are a series of stages for an animation, described as percentages.
+# The percentages relate to how far through the animation each keyframe sits. The browser animates between each of the keyframes
+
+@keyframes name {
+    from { ... }
+    to { ... }
+}
+
+@keyframe name {
+    0% { ... }
+    100% { ... }
+}
+
+# Mutiple percentages on one line couses the animation to wait. In this case, the animation doesn't change between 0% and 10%.
+@Keyframes name {
+    0%, 10% { ... }
+    50% { ... }
+    100% { ... }
+}

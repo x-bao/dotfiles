@@ -1,0 +1,23 @@
+# How long the animation waits before starting. A negative value can be used. Values are in seconds or milliseconds.
+animation-delay
+
+# control the direction the animation plays.Values: normal, reverse, alternate and alternate-reverse.
+animation-direction
+
+# How long the animation plays for. Takes values in seconds or milliseconds.
+animation-duration
+
+# Whether the animaition finishes and reverts to the non-animated state, or stops at the end or beginning of the animation. Can be forward, backward, or both.
+animation-fill-mode
+
+# The number of times the animation plays. By default it will play once. You can secify a number, or infinite to have it loop forever.
+animation-iteration-count
+
+# The animation-name refers to the keyframes associated with the animation.
+animation-name
+
+# Whether the animation is in a running or paused state.
+animation-play-state
+
+# A function describing the rate of change between each of the keyframes. Can be lineat, ease-in, ease-out, steps, or cubic-bezier.
+animation-timing-function
