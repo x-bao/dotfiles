@@ -1,0 +1,37 @@
+# Conver video to audio
+ffpeg -i input.mp4 output.avi
+
+# Play audio/video
+ffplay audio.mp3/video.mp4
+
+# Get info of video
+ffprobe -v quiet -print_format json -show_format -show_streams VIDEO_FILE
+
+
+# Conver video format
+ffmpeg -y -i input.mp4 -ab 56k -ar 22050 -b:v 500k -r 29.97 -s 640x358 output.flv
+
+# Simple
+ffmpeg -i input.mp4 -b:v 500k output.flv
+
+# To set the video bitrate of the output file to 64 kbit/s
+ffmpeg -i input.avi -b:v 64k -bufsize 64k output.avi
+
+# To force the frame rate of the output file to 24 fps:
+ffmpeg -i input.avi -r 24 output.avi
+
+# To force the frame rate of the input file (valid for raw formats only) to 1 fps
+# and the frame rate of the output file to 24 fps:
+ffmpeg -r 1 -i input.m2v -r 24 output.avi
+
++------------------------+----------------------+---------------------+
+| Overwrite output files | input file           | Set the audio       |
+| without asking.        |                      | sampling frequency  |
+|                        |                      |                     |
+| -y                     | -i                   | -ar                 |
++------------------------+----------------------+---------------------+
+| video bitrate of       | size of each frame   | -                   |
+| the output file        |                      |                     |
+|                        |                      |                     |
+| -b:v                   | -s                   |                     |
++------------------------+----------------------+---------------------+
