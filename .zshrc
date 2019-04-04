@@ -4,28 +4,17 @@ alias phptags='ctags --langmap=php:.engine.inc.module.theme.php --php-kinds=cdf 
 alias vi='vim'
 alias vsc="'/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'"
 alias gti='git'
-alias rmm='trash'
+alias rm='trash'
 alias c='ici'
 alias txd='sftp -P2222 sanbaofeng@login.tianxiao100.com'
-
 alias ls="ls --color=auto"
-
-alias pc="proxychains4 -f ~/.proxychains.conf"
-
-
-# # phpbrew
-# [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 # alias
 [[ -e ~/.alias ]] && source ~/.alias
 
-# z.sh
-# . ~/z.sh
-
 # node
 export NVM_DIR="/Users/bjhl/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-# alias cnpm="npm --registry=https://registry.npm.taobao.org \ --cache=$HOME/.npm/.cache/cnpm \ --disturl=https://npm.taobao.org/dist \ --userconfig=$HOME/.cnpmrc"
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
     --cache=$HOME/.npm/.cache/cnpm \
     --disturl=https://npm.taobao.org/dist \
@@ -124,21 +113,19 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export NODE_ENV
 
-# export ALL_PROXY=socks5://127.0.0.1:1086
-# export ALL_PROXY=http://127.0.0.1:1087
-
 function proxy_off(){
+    killall privoxy
     unset http_proxy
     unset https_proxy
     echo -e "Bye~"
 }
 function proxy_on() {
+    privoxy .privoxy-config
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
     export http_proxy="http://127.0.0.1:8118"
     export https_proxy=$http_proxy
     echo -e "Enjoy~"
 }
-
 
 if brew list | grep coreutils > /dev/null ; then
   PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"

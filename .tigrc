@@ -1,6 +1,6 @@
 set line-graphics = utf-8
 set mailmap = yes
-set mouse = yes
+#set mouse = yes
 set main-view = line-number:no,interval=5 id:yes date:default author:abbreviated commit-title:yes,graph,refs,overflow=no
 #set diff-highlight = true
 set tab-size = 4
