@@ -1,13 +1,20 @@
 function proxyOff() {
-    # killall privoxy
     unset http_proxy
     unset https_proxy
+    unset HTTP_PROXY
+    unset HTTPS_PROXY
+    unset all_proxy
+    unset ALL_PROXY
     echo -e "Bye~"
 }
 
 function proxySimpleOn() {
     export http_proxy=http://127.0.0.1:1087;
     export https_proxy=http://127.0.0.1:1087;
+    export HTTP_PROXY=http://127.0.0.1:1087;
+    export HTTPS_PROXY=http://127.0.0.1:1087;
+    export all_proxy=http://127.0.0.1:1087;
+    export ALL_PROXY=http://127.0.0.1:1087;
     echo -e "Enjoy~"
 }
 
@@ -34,7 +41,7 @@ function proxyHelp () {
 
     echo 'Options:'
     echo "  -a --all \tProxy all commands"
-    echo "  -s --simple \tProxy part of commands, eg: curl wget"
+    echo "  -s --simple \tProxy part of commands, eg: curl wget brew"
     echo "  -t --test \tTest proxy is valid"
     echo "  -f --off \tTurn off proxy"
     echo "  -h --help \tShow help"
