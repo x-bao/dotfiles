@@ -106,7 +106,7 @@ function proxy () {
             curl -I https://www.google.com
             ;;
         (*)
-            proxy -h
+            proxy -s
             ;;
     }
 }
