@@ -8,7 +8,7 @@ offset=5
 
 for i in `seq $base $(($base + $offset - 1))`
 do
-    ping -c 3 192.168.51.$i
+    ping -c 3 192.168.0.$i
     echo "\r\n"
 done
 
