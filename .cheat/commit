@@ -1,0 +1,17 @@
+const types = [ 
+    'build',
+    'ci',
+    // 日常提交
+    'chore',
+    'docs',
+    'feat',
+    // bug修复
+    'fix',
+    'perf',
+    'refactor',
+    'revert',
+    // 代码格式
+    'style',
+    'test'
+]
+
