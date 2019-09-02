@@ -16,6 +16,7 @@ alias c='ici'
 alias txd='sftp -P2222 sanbaofeng@login.tianxiao100.com'
 alias ls="ls --color=auto"
 alias sms="python3 ~/.bin/test-sms"
+alias wx="/Applications/wechatwebdevtools.app/Contents/MacOS/cli"
 
 # proxy in iTerm2
 [[ -e ~/.proxy ]] && source ~/.proxy
@@ -29,6 +30,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
     --userconfig=$HOME/.cnpmrc"
 
 export PATH="$HOME/.bin:/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/bin:HOME/.composer/vendor/bin:vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -47,4 +49,5 @@ export EVENT_NOKQUEUE=1
 
 alias imgcat=~/.iterm2/imgcat;
 alias imgls=~/.iterm2/imgls;
+
 
