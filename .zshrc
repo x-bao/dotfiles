@@ -17,6 +17,7 @@ alias txd='sftp -P2222 sanbaofeng@login.tianxiao100.com'
 alias ls="ls --color=auto"
 alias sms="python3 ~/.bin/test-sms"
 alias wx="/Applications/wechatwebdevtools.app/Contents/MacOS/cli"
+alias repare="xattr -d com.apple.FinderInfo "
 
 # proxy in iTerm2
 [[ -e ~/.proxy ]] && source ~/.proxy
