@@ -10,6 +10,7 @@ source $ZSH/oh-my-zsh.sh
 alias phptags='ctags --langmap=php:.engine.inc.module.theme.php --php-kinds=cdf --languages=php'
 alias vi='vim'
 alias vsc="'/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'"
+alias git='LANG=en_GB git'
 alias gti='git'
 alias rm='trash'
 alias c='ici'
@@ -25,12 +26,13 @@ alias repare="xattr -d com.apple.FinderInfo "
 # nvm
 export NVM_DIR="/Users/bjhl/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
     --cache=$HOME/.npm/.cache/cnpm \
     --disturl=https://npm.taobao.org/dist \
     --userconfig=$HOME/.cnpmrc"
 
-export PATH="$HOME/.bin:/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/bin:HOME/.composer/vendor/bin:vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="$HOME/.bin/trojan:$HOME/.bin/:/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/bin:HOME/.composer/vendor/bin:vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
