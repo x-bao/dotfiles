@@ -54,3 +54,4 @@ alias imgcat=~/.iterm2/imgcat;
 alias imgls=~/.iterm2/imgls;
 
 
+alias config='/usr/bin/git --git-dir=/Users/bjhl/.dotfiles/ --work-tree=/Users/bjhl'
