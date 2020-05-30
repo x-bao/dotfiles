@@ -20,7 +20,7 @@ function proxySimpleOn() {
 
 function proxyAllOn() {
     privoxy ~/.privoxyrc
-    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,npm.baijiahulian.com,registry.npm.taobao.org"
     export http_proxy="http://127.0.0.1:1087"
     export https_proxy=$http_proxy
     echo -e "Enjoy~"
@@ -68,7 +68,7 @@ function proxyHelp () {
     echo '  proxy --test'
 }
 
-function proxy () {
+function proxy() {
     case $1 {
         (-a)
             ;&

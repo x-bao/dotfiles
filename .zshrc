@@ -15,7 +15,7 @@ alias rm='trash'
 alias sms="python3 ~/.bin/test-sms"
 alias wx="/Applications/wechatwebdevtools.app/Contents/MacOS/cli"
 alias repare="xattr -d com.apple.FinderInfo "
-alias vsc='codium'
+alias vsc='code'
 
 # proxy in iTerm2
 [[ -e ~/.proxy ]] && source ~/.proxy
@@ -23,6 +23,9 @@ alias vsc='codium'
 # nvm
 export NVM_DIR="/Users/bjhl/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export DENO_INSTALL="/Users/bjhl/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 export PATH="$HOME/.bin/trojan:$HOME/.bin/:/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/bin:HOME/.composer/vendor/bin:vendor/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -44,3 +47,7 @@ alias imgcat=~/.iterm2/imgcat;
 alias imgls=~/.iterm2/imgls;
 
 alias dfiles='/usr/bin/git --git-dir=/Users/bjhl/.dotfiles/ --work-tree=/Users/bjhl'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
