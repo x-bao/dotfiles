@@ -20,7 +20,7 @@ function proxySimpleOn() {
 
 function proxyAllOn() {
     privoxy ~/.privoxyrc
-    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,npm.baijiahulian.com,registry.npm.taobao.org"
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com,npm.baijiahulian.com,registry.npm.taobao.org,fanyi.youdao.com,iciba.com"
     export http_proxy="http://127.0.0.1:1087"
     export https_proxy=$http_proxy
     echo -e "Enjoy~"
